@@ -1,0 +1,142 @@
+/* CONFIGURAÇÃO GERAL */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff5f7;
+    color: #4a3035;
+    margin: 0;
+}
+
+
+/* CABEÇALHO */
+
+header {
+    background-color: #f4b6c2;
+    text-align: center;
+    padding: 40px;
+}
+
+header h1 {
+    font-size: 40px;
+    margin: 0;
+}
+
+header p {
+    font-size: 18px;
+}
+
+
+/* MENU */
+
+nav {
+    background-color: #7b3f4a;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffd9e1;
+}
+
+
+/* CONTEÚDO */
+
+main {
+    width: 80%;
+    margin: auto;
+}
+
+section {
+    background-color: white;
+    margin: 30px 0;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px #ddd;
+}
+
+h2 {
+    color: #a84d62;
+}
+
+h3 {
+    color: #7b3f4a;
+}
+
+
+/* TABELA */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #f4b6c2;
+    padding: 12px;
+}
+
+td {
+    padding: 12px;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #fff0f3;
+}
+
+
+/* FORMULÁRIO */
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+select,
+textarea {
+    padding: 10px;
+    border: 1px solid #d99aa8;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+
+/* BOTÃO */
+
+button {
+    background-color: #a84d62;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #7b3f4a;
+}
+
+
+/* RODAPÉ */
+
+footer {
+    background-color: #7b3f4a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
