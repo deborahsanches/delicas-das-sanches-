@@ -1,19 +1,25 @@
-```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
+
     <meta charset="UTF-8">
-    
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Delícias das Sanches</title>
+
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
     <header>
 
-        <h1>🍰 Delícias das Sanches</h1>
+        <img src="logo.png" alt="Logo Delícias das Sanches">
+
+        <h1>Delícias das Sanches</h1>
 
         <p>
             Doces feitos com carinho para deixar seu dia mais doce!
@@ -21,19 +27,21 @@
 
     </header>
 
-    <hr>
 
     <nav>
 
-        <a href="#inicio">Início</a> |
-        <a href="#doces">Doces</a> |
-        <a href="#bolos">Bolos</a> |
-        <a href="#pedido">Fazer Pedido</a> |
+        <a href="#inicio">Início</a>
+
+        <a href="#doces">Doces</a>
+
+        <a href="#bolos">Bolos</a>
+
+        <a href="#pedido">Fazer Pedido</a>
+
         <a href="#contato">Contato</a>
 
     </nav>
 
-    <hr>
 
     <main>
 
@@ -52,13 +60,12 @@
 
         </section>
 
-        <hr>
 
         <section id="doces">
 
             <h2>🍫 Nossos Doces</h2>
 
-            <table border="1">
+            <table>
 
                 <tr>
                     <th>Doce</th>
@@ -100,7 +107,6 @@
 
         </section>
 
-        <hr>
 
         <section id="bolos">
 
@@ -122,85 +128,142 @@
 
         </section>
 
-        <hr>
 
         <section id="pedido">
 
             <h2>🛒 Faça seu Pedido</h2>
 
             <p>
-                Preencha o formulário abaixo para solicitar seu pedido.
+                Preencha os dados abaixo para enviar seu pedido.
             </p>
 
-            <form>
 
-                <label>Nome:</label>
+            <form id="formPedido">
 
-                <input type="text">
+                <label for="nome">
+                    Nome:
+                </label>
 
-                <br><br>
+                <input
+                    type="text"
+                    id="nome"
+                    required
+                >
 
-                <label>Telefone:</label>
 
-                <input type="tel">
+                <label for="telefone">
+                    Telefone:
+                </label>
 
-                <br><br>
+                <input
+                    type="tel"
+                    id="telefone"
+                    required
+                >
 
-                <label>Escolha seu doce:</label>
 
-                <select>
+                <label for="produto">
+                    Escolha seu produto:
+                </label>
 
-                    <option>Brigadeiro</option>
-                    <option>Beijinho</option>
-                    <option>Brownie</option>
-                    <option>Cookie</option>
-                    <option>Morango com chocolate</option>
-                    <option>Bolo de Chocolate</option>
-                    <option>Bolo de Cenoura</option>
-                    <option>Bolo de Morango</option>
+                <select id="produto" required>
+
+                    <option value="">
+                        Selecione um produto
+                    </option>
+
+                    <option value="Brigadeiro - R$ 3,00">
+                        Brigadeiro - R$ 3,00
+                    </option>
+
+                    <option value="Beijinho - R$ 3,00">
+                        Beijinho - R$ 3,00
+                    </option>
+
+                    <option value="Brownie - R$ 8,00">
+                        Brownie - R$ 8,00
+                    </option>
+
+                    <option value="Cookie - R$ 6,00">
+                        Cookie - R$ 6,00
+                    </option>
+
+                    <option value="Morango com chocolate - R$ 7,00">
+                        Morango com chocolate - R$ 7,00
+                    </option>
+
+                    <option value="Bolo de Chocolate - R$ 45,00">
+                        Bolo de Chocolate - R$ 45,00
+                    </option>
+
+                    <option value="Bolo de Cenoura - R$ 40,00">
+                        Bolo de Cenoura - R$ 40,00
+                    </option>
+
+                    <option value="Bolo de Morango - R$ 55,00">
+                        Bolo de Morango - R$ 55,00
+                    </option>
+
+                    <option value="Bolo de Leite Ninho - R$ 60,00">
+                        Bolo de Leite Ninho - R$ 60,00
+                    </option>
+
+                    <option value="Bolo de Prestígio - R$ 55,00">
+                        Bolo de Prestígio - R$ 55,00
+                    </option>
 
                 </select>
 
-                <br><br>
 
-                <label>Quantidade:</label>
+                <label for="quantidade">
+                    Quantidade:
+                </label>
 
-                <input type="number">
+                <input
+                    type="number"
+                    id="quantidade"
+                    min="1"
+                    required
+                >
 
-                <br><br>
 
-                <label>Data para retirada:</label>
+                <label for="data">
+                    Data para retirada:
+                </label>
 
-                <input type="date">
+                <input
+                    type="date"
+                    id="data"
+                    required
+                >
 
-                <br><br>
 
-                <label>Observações:</label>
+                <label for="observacoes">
+                    Observações:
+                </label>
 
-                <br>
+                <textarea
+                    id="observacoes"
+                    rows="5"
+                    placeholder="Exemplo: pouco açúcar, mensagem no bolo..."
+                ></textarea>
 
-                <textarea rows="5" cols="40"
-                    placeholder="Digite aqui alguma observação sobre seu pedido">
-                </textarea>
-
-                <br><br>
 
                 <button type="submit">
-                    Fazer Pedido
+                    📱 Enviar Pedido pelo WhatsApp
                 </button>
 
             </form>
 
         </section>
 
-        <hr>
 
         <section id="contato">
 
             <h2>📞 Entre em Contato</h2>
 
             <p>
-                Telefone: (11) 99999-9999
+                Telefone: (11) 98768-1512
             </p>
 
             <p>
@@ -215,7 +278,6 @@
 
     </main>
 
-    <hr>
 
     <footer>
 
@@ -229,7 +291,68 @@
 
     </footer>
 
+
+    <script>
+
+        document
+        .getElementById("formPedido")
+        .addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+
+            const nome =
+                document.getElementById("nome").value;
+
+            const telefone =
+                document.getElementById("telefone").value;
+
+            const produto =
+                document.getElementById("produto").value;
+
+            const quantidade =
+                document.getElementById("quantidade").value;
+
+            const data =
+                document.getElementById("data").value;
+
+            const observacoes =
+                document.getElementById("observacoes").value;
+
+
+            const mensagem =
+
+                "🍰 *NOVO PEDIDO - DELÍCIAS DAS SANCHES*%0A%0A" +
+
+                "👤 *Nome:* " + nome + "%0A" +
+
+                "📱 *Telefone:* " + telefone + "%0A" +
+
+                "🧁 *Produto:* " + produto + "%0A" +
+
+                "🔢 *Quantidade:* " + quantidade + "%0A" +
+
+                "📅 *Data:* " + data + "%0A" +
+
+                "📝 *Observações:* " + observacoes;
+
+
+            const numeroWhatsApp = "5511987681512";
+
+
+            const link =
+                "https://wa.me/" +
+                numeroWhatsApp +
+                "?text=" +
+                mensagem;
+
+
+            window.open(link, "_blank");
+
+        });
+
+    </script>
+
 </body>
 
 </html>
-```
